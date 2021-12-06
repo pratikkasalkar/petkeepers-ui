@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background: #1C8EF9 !important;
+  background: #1C8EF9;
   min-height: 100vh;
   display: flex;
   font-weight: 400;
@@ -23,7 +23,7 @@ body, html, .App, #root, .auth-wrapper {
 
 .navbar-light {
   background-color: #ffffff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  /* box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2); */
 }
 
 .auth-wrapper {
@@ -34,13 +34,33 @@ body, html, .App, #root, .auth-wrapper {
 }
 
 .auth-inner {
-  width: 450px;
+  /* width: 450px; */
+  width: 80%;
   margin: auto;
-  background: #ffffff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  background-color: #ffffff;
+  /* box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2); */
+  box-shadow: 0px 4px 55px 0px rgb(34 35 58 / 11%);
   padding: 40px 55px 45px 55px;
   border-radius: 15px;
   transition: all .3s;
+  margin-top: 5rem;
+  background: url(images/good-doggy-animate.svg) no-repeat right -10px;
+}
+
+.form-container {
+  position: relative;
+  min-width: 450px;
+  width: 50%;
+  box-shadow: 0px 4px 17px rgb(34 35 58 / 12%);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  margin: auto;
+  margin-left: 2%;
+}
+
+.auth-wrapper .form-control {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 
 .auth-wrapper .form-control:focus {
@@ -55,8 +75,17 @@ body, html, .App, #root, .auth-wrapper {
   padding-bottom: 20px;
 }
 
+.auth-wrapper .form-group {
+  margin-bottom: 1.5rem;
+}
+.auth-wrapper .form-group label{
+  font-size: .9rem;
+  margin-bottom: 0.3rem;
+}
+
 .custom-control-label {
   font-weight: 400;
+  margin-bottom: 0 !important;
 }
 
 .forgot-password,
@@ -70,4 +99,27 @@ body, html, .App, #root, .auth-wrapper {
 
 .forgot-password a {
   color: #167bff;
+}
+
+.attribute-link{
+  position: fixed;
+  bottom: 0;
+  right: 12px;
+  color: #c4c4c4;
+  font-size: 10px;
+}
+
+.form-pet-icon-top{
+  width: 112px;
+  height: 110px;
+  position: absolute;
+  background-color: #d0cde1;
+  border-radius: 9px;
+  top: -53px;
+  left: -43px;
+  box-shadow: 0px 1px 13px rgb(34 35 58 / 5%);
+  background-image: url(images/Playful-cat.svg);
+  background-size: 201%;
+  background-position-x: -51px;
+  background-position-y: -77px;
 }
