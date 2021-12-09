@@ -1,11 +1,20 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Login extends Component {
+
+    // constructor(props) {
+    //     super(props);
+    //     this.state = { redirect: false }
+    // }
+
     render() {
         return (
+            
             <div class="form-container">
                 <div class="form-pet-icon-top"></div>
-                <form>
+                
+                <form onSubmit={this.onSubmit}> 
                     <h3>Sign In</h3>
 
                     <div className="form-group">
@@ -25,7 +34,9 @@ export default class Login extends Component {
                         </div>
                     </div>
 
-                    <button type="submit" className="btn btn-primary btn-block">Submit</button>
+                    {/* <button type="submit" className="btn btn-primary btn-block" >Submit</button> */}
+                    <Link className="btn btn-outline-dark btn-lg" role="button" to="/home"> Submit </Link>
+                
                     <p className="forgot-password text-right">
                         Forgot <a href="#">password?</a>
                     </p>

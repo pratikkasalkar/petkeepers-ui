@@ -123,3 +123,67 @@ body, html, .App, #root, .auth-wrapper {
   background-position-x: -51px;
   background-position-y: -77px;
 }
+
+.home-nav{
+  border-bottom: 1px solid lightgray;
+}
+.card-container{
+  margin-top: 30px;
+}
+.ui.cards {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+  width: 80%;
+  padding: 15px;
+
+}
+
+.ui.card {
+  padding: 15px;
+  margin: 15px;
+  flex-basis:30%;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.ui.card .image {
+  margin-bottom: 15px;
+  margin: -15px;
+  margin-bottom: 15px;
+}
+
+.ui.card .image img {
+  width: 100%;
+}
+
+.ui.card .content .header {
+  font-size: 1.6rem;
+  color: #027bfe;
+}
+
+.ui.card .content .meta {
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #4c4c4c;
+}
+
+.ui.card .content .description {
+  margin: 10px auto;
+}
+
+.ui.card .extra {
+  margin-bottom: 10px;
+}
+
+.ui.card:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.contact-btn .btn{
+  width: 100%;
+}

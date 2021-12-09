@@ -1,14 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { Router,Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
+import Home from "./components/home.component";
+import Home2 from "./components/home2.component";
 import * as serviceWorker from "./serviceWorker";
+import { createBrowserHistory } from "history";
 
+
+const history = createBrowserHistory();
 ReactDOM.render(
-    <BrowserRouter>
+<Router history={history}> 
+    <div>
+      <Route exact path="/">
         <App />
-    </BrowserRouter>,
+      </Route>
+      <Route path="/home">
+        <Home />
+      </Route>
+    </div>
+  </Router>,
     document.getElementById("root")
 );
 

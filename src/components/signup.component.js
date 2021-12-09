@@ -27,7 +27,7 @@ export default class SignUp extends Component {
           axios.post('http://localhost:8080/nci/saveAll',this.state).then(response => {console.log(response)}).catch(error =>  {console.log(error)});
       }
     render() {
-        const{fullname,username,password,email} = this.state
+        const{fullname,username,password,email,usertype} = this.state
         return (
             <form onSubmit={this.submitHandler}>
                 <h3>Sign Up</h3>
@@ -50,6 +50,15 @@ export default class SignUp extends Component {
                     <label>Password</label>
                     <input type="password" className="form-control" placeholder="Enter password" name="password" value={password} onChange={this.changeHandler} />
                 </div>
+
+                <div className="form-group">
+                    <label>User Type</label>
+                    <select type="usertype" className="form-control" name="usertype" value={usertype} onChange={this.changeHandler}>
+                    <option value='petkeeper'>Petkeeper</option>
+                    <option value='petowner'>Petowner</option>
+                    </select>
+                </div>
+
 
                 <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
                 <p className="forgot-password text-right">
