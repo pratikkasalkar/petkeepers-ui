@@ -28,6 +28,13 @@ export default class Login extends Component {
                     </div>
 
                     <div className="form-group">
+                    <label>Sign in As </label>
+                    <select type="usertype" className="form-control" name="usertype">
+                    <option value='petkeeper'>Petkeeper</option>
+                    <option value='petowner'>Petowner</option>
+                    </select>
+                </div>
+                <div className="form-group">
                         <div className="custom-control custom-checkbox">
                             <input type="checkbox" className="custom-control-input" id="customCheck1" />
                             <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
