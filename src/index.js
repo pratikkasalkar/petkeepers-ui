@@ -8,7 +8,6 @@ import Home2 from "./components/home2.component";
 import * as serviceWorker from "./serviceWorker";
 import { createBrowserHistory } from "history";
 
-
 const history = createBrowserHistory();
 ReactDOM.render(
 <Router history={history}> 
@@ -18,6 +17,9 @@ ReactDOM.render(
       </Route>
       <Route path="/home">
         <Home />
+      </Route>
+      <Route path="/home2">
+        <Home2 />
       </Route>
     </div>
   </Router>,

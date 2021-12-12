@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Login from "./components/login.component";
 import SignUp from "./components/signup.component";
-import Home from "./components/home.component";
+//import Home from "./components/home.component";
 
 
 function App() {
@@ -40,16 +40,16 @@ function App() {
   );
 }
 
-function saveAll() {
+//function saveAll() {
   // Simple POST request with a JSON body using fetch
-  const requestOptions = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username:"pratikk10", password:"password", email:"xyz@gmail.com", usertype:"petsitter" })
-  };
-  fetch('https://reqres.in/api/posts', requestOptions)
-      .then(response => response.json())
-      .then(data => this.setState({ postId: data.id }));
-}
+//  const requestOptions = {
+//      method: 'POST',
+//      headers: { 'Content-Type': 'application/json' },
+//      body: JSON.stringify({ username:"pratikk10", password:"password", email:"xyz@gmail.com", usertype:"petsitter" })
+//  };
+//  fetch('https://reqres.in/api/posts', requestOptions)
+//      .then(response => response.json())
+//      .then(data => this.setState({ postId: data.id }));
+//}
 
 export default App;

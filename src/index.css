@@ -9,6 +9,9 @@ body {
   display: flex;
   font-weight: 400;
   font-family: 'Fira Sans', sans-serif;
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1,h2,h3,h4,h5,h6,label,span {
@@ -45,6 +48,7 @@ body, html, .App, #root, .auth-wrapper {
   transition: all .3s;
   margin-top: 5rem;
   background: url(images/good-doggy-animate.svg) no-repeat right -10px;
+  background-color: white;
 }
 
 .form-container {
@@ -128,7 +132,7 @@ body, html, .App, #root, .auth-wrapper {
   border-bottom: 1px solid lightgray;
 }
 .card-container{
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .ui.cards {
   display: flex;
@@ -148,6 +152,8 @@ body, html, .App, #root, .auth-wrapper {
   margin: 15px;
   flex-basis:30%;
   transition: box-shadow 0.3s ease-in-out;
+  border-radius: 5px;
+  justify-content: space-between;
 }
 
 .ui.card .image {
@@ -158,6 +164,7 @@ body, html, .App, #root, .auth-wrapper {
 
 .ui.card .image img {
   width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 
 .ui.card .content .header {
@@ -186,4 +193,54 @@ body, html, .App, #root, .auth-wrapper {
 
 .contact-btn .btn{
   width: 100%;
+}
+
+.main {
+  margin-top: 40px;
+  padding: 15px 25px;
+}
+
+.header-container{
+  padding-top: 15px;
+  text-align: center;
+}
+
+.header-container .section-header{
+  display: block;
+  z-index: 1;
+}
+
+.header-container .img-container img{
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 18%;
+  z-index: -2;
+}
+
+.section-header {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 2.4rem;
+  
+}
+
+.navbar{
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.section-container {
+  text-align: center;
+  padding: 15px;
+}
+
+.keeper-calendar-container .rdrDateRangePickerWrapper {
+  margin-top: 28px;
+}
+
+.keeper-calendar-container .btn{
+  display:block;
+  margin: auto;
+  margin-top: 30px;
+  width: 558px;
 }
