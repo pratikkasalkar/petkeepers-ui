@@ -27,7 +27,7 @@ export default class Home2 extends Component {
       <><div>
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <div className="container">
-            <a class="navbar-brand" href="#">petkeepers.ie</a>
+            <a class="navbar-brand" href="#">Signed in as Pet Keepers</a>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">

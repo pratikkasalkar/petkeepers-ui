@@ -14,6 +14,7 @@ export default class Home extends Component {
 
     const sendMail = () => {
       axios.get('localhost:8080/nci/sendemail').then(response => {console.log(response)}).catch(error =>  {console.log(error)});
+      alert("Email Request Sent!")
       
     }
 
@@ -21,7 +22,7 @@ export default class Home extends Component {
      <> <div>
        <nav className="navbar navbar-expand-lg navbar-light fixed-top">
       <div className="container">
-        <a class="navbar-brand" href="#">petkeepers.ie</a>
+        <a class="navbar-brand" href="#">Signed in as Pet Owners</a>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
@@ -80,7 +81,7 @@ export default class Home extends Component {
                 ui={false}
               />
               <Card.Content>
-                <Card.Header>Vaishnavi</Card.Header>
+                <Card.Header>Vaishnavi Kasar</Card.Header>
                 <Card.Meta>
                   <span className="date">Joined in 2020 || Petkeeper</span>
                 </Card.Meta>
@@ -110,12 +111,12 @@ export default class Home extends Component {
                 ui={false}
               />
               <Card.Content>
-                <Card.Header>Teena</Card.Header>
+                <Card.Header>Teena Kohli</Card.Header>
                 <Card.Meta>
                   <span className="date">Joined in 2018 || Petkeeper/Petowner</span>
                 </Card.Meta>
                 <Card.Description>
-                  Teena is a musician living in Nashville.
+                  Teena is a DevOps Engineer. She's got a German Shepard and loves animals.
                 </Card.Description>
               </Card.Content>
               <Card.Content extra>
